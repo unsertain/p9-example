@@ -15,6 +15,10 @@ student_info = {'4401001': 'Christine Adewale',
 '302319' : 'Marianna Said',
 '4401094' : 'Sebastian Tapia'}
 
+
 while True:
-    s_id = input('Scan student id: ')
-    print('%s checked in - %s' % (student_info[s_id], time.time()))
+    s_id = input('Scan student id or enter q to quit')
+    #print('%s checked in - %s' % (student_info[s_id], time.time()))
+    if s_id in ['q', 'Q']:
+        break
+
